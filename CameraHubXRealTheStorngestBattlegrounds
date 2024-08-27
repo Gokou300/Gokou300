@@ -1,0 +1,116 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Camera Hub X 5.0", "GrapeTheme")local Tab = Window:NewTab("character tsb")
+local Section = Tab:NewSection("characters")Section:NewButton("satiama mixed power", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/Y3uyGSK6"))()print("Clicked")
+end)Section:NewButton("Hero Hunter To Suriyu", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/xVicity/BURNED/main/LATEST.lua'))() print("Clicked")
+end)Section:NewButton("Satitma To KJ", "ButtonInfo", function()loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/983185f7b0f46a55e497cc29b597ce56/raw/0775d1d0f76d2a2c91a471827a54c70c04984af5/saitama%2520to%2520kj")()print("Clicked")
+end)Section:NewButton("Satitma To Gojo", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/2aDTHUTA"))()print("Clicked")
+end)Section:NewButton("Hero Hunter To Jotaro", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/h8h88/dfgfdvdf/main/eeeee"))()print("Clicked")
+end)Section:NewButton("satiama to god combats", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/ajLiiicx"))()print("Clicked")
+end)Section:NewButton("A-Train no dmg", "ButtonInfo", function()loadstring(game:HttpGet("https://github.com/l0ckerV5/Roblox-Scripts/raw/main/The%20Strongest%20Battlegrounds/Custom%20Character/A-Train"))()print("Clicked")
+end)local Section = Tab:NewSection("Click F To Hide The Ui.")local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Credits To the owner")Section:NewButton("Fake KJ Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Tariviste/Gojo/main/Source"))()print("Clicked")
+end)Section:NewButton("Betless Hub x", "ButtonInfo", function()loadstring(game:HttpGet("https://rentry.org/betless-hub-x/raw"))()print("Clicked")
+end)Section:NewButton("KJ Script Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AlperPro/shhh/main/KJ%20Script.lua"))()print("Clicked")
+end)
+local Tab = Window:NewTab("Trolls")
+local Section = Tab:NewSection("Trolling")Section:NewButton("Fe Fling", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()print("Clicked")
+end)Section:NewButton("Infinite Yield", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))print("Clicked")
+end)local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Exploits")Section:NewButton("Aimbot", "ButtonInfo", function()loadstring(game:HttpGet("https://rentry.co/n55gmtpi/raw", true))()print("Clicked")
+end)Section:NewButton("Esp", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/imLUDk7h"))()print("Clicked")
+end)local Tab = Window:NewTab("KJ Stuff")
+local Section = Tab:NewSection("KJ")Section:NewButton("KJ Victim Tools", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/75zWy13P"))();print("Clicked")
+end)Section:NewButton("20 20 20 Dropkick Tool", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/7JdC3wL1"))()print("Clicked")
+end)Section:NewButton("KJ Ult Only Anim", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/Yk7clVVA/raw"))()print("Clicked")
+end)Section:NewButton("Stoic Bomb", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/cKkjRwyh/raw"))()print("Clicked")
+end)Section:NewButton("KJ Wall Combo", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/u3Apil9t/raw"))()print("Clicked")
+end)Section:NewButton("20 20 20 Dropkick hitter", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/y1JjYVVm/raw"))()print("Clicked")
+end)Section:NewButton("Five Seasons Tp", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/XuHUQwIy/raw"))()print("Clicked")
+end)Section:NewButton("Five Seasons", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/hzerkicS/raw"))()print("Clicked")
+end)Section:NewButton("KJ Wall Combo Victim", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/QVhR9YVl/raw"))()print("Clicked")
+end)Section:NewButton("Ravage (Be Near Dummy", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/pQBSdrBG"))()print("Clicked")
+end)local Section = Tab:NewSection("Only New Anim Will get not buggy after usage.")local Tab = Window:NewTab("Misc 2")
+local Section = Tab:NewSection("Misc")Section:NewButton("tsb plugin", "ButtonInfo", function()loadstring(game:HttpGet("https://github.com/l0ckerV5/Roblox-Scripts/raw/main/The-Strongest-Battlegrounds/Plugin-v1.20.91"))()print("Clicked")
+end)Section:NewButton("Keybored", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()print("Clicked")
+end)local Tab = Window:NewTab("hubs 2")
+local Section = Tab:NewSection("more hubs")Section:NewButton("No Name Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/NoName-010/AFAS3000/main/Loader"))()print("Clicked")
+end)Section:NewButton("Glacier Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))();print("Clicked")
+end)Section:NewButton("Kadehub V2", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/JayXSama/ray-makk/main/Loader"))()print("Clicked")
+end)Section:NewButton("Aqua Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://rentry.org/aquarius-hub/raw"))()print("Clicked")
+end)Section:NewButton("Auto Combo Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://rentry.org/autocombo/raw"))print("Clicked")
+end)Section:NewButton("Mod Menu Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/ayWSdgWE/raw"))()print("Clicked")
+end)Section:NewButton("kilobytes hub", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/GPN1foyD/raw"))()print("Clicked")
+end)Section:NewButton("TSB animation", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Mautiku/ehh/main/strong%20guest.lua.txt'))()print("Clicked")
+end)Section:NewButton("SUSSY Hub Anygame", "ButtonInfo", function()loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/f6faebfa0dfc90a00033ed65a77ffb0e/raw/b90967656b575a90a7747a51f81be2114983e4e3/SUSSY%2520HUB")()print("Clicked")
+end)Section:NewButton("Heich Custom Hub", "ButtonInfo", function()loadstring(game:HttpGet"https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr")()print("Clicked")
+end)Section:NewButton("Summoned Hub", "ButtonInfo", function()loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/18aa4be98855e777599c5b605d65cd9d/raw/74d7779283aba6e3a3be47cbea4615807532ca17/gistfile1.txt")()print("Clicked")
+end)Section:NewButton("NSExpression Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://github.com/1dontgiveaf/NSExpression/raw/main/script.lua", true))()print("Clicked")
+end)
+local Section = Tab:NewSection("Key:omgbestscript")local Tab = Window:NewTab("Exploits")
+local Section = Tab:NewSection("Exploit")Section:NewButton("Auto block and aimbot", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/2dJgoWsF/raw"))()print("Clicked")
+end)Section:NewButton("Auto Combo V1", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/XNKwIjUX/raw"))()print("Clicked")
+end)Section:NewButton("Rizz Any Game", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/1imK0X8p/raw"))()print("Clicked")
+end)Section:NewButton("Mod Menu", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/ayWSdgWE/raw"))()print("Clicked")
+end)Section:NewButton("Auto Void Kill", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/afHQ7oyj/raw"))()print("Clicked")
+end)Section:NewButton("Semi Kyoto Combo", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/zEEqTYAc"))()print("Clicked")
+end)Section:NewButton("Easy Kill Stealer", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/v7noKGy5/raw"))()print("Clicked")
+end)Section:NewButton("Auto Combo V2", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/7JAL5avp"))()print("Clicked")
+end)Section:NewButton("FE Chatbypasser Anygame", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/T4FEyvHH"))()print("Clicked")
+end)Section:NewButton("Anti Lag V2", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/EQibWytB"))()print("Clicked")
+end)Section:NewButton("FE Emotes Any Game", "ButtonInfo", function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()print("Clicked")
+end)Section:NewButton("Anti Lag V1", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/louismich4el/ItsLouisPlayz-Scripts/main/TSB%20Anti%20Lag.lua"))()print("Clicked")
+end)local Tab = Window:NewTab("games")
+local Section = Tab:NewSection("other games")Section:NewButton("ninja legends", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()print("Clicked")
+end)Section:NewButton("Blade Ball", "ButtonInfo", function()loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))print("Clicked")
+end)Section:NewButton("murder mystery 2", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()print("Clicked")
+end)Section:NewButton("Legends Battlegrounds", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/gbwEzNX4/raw"))()print("Clicked")
+end)
+local Section = Tab:NewSection("key:Zenon12345") local Tab = Window:NewTab("character tsb 2")
+local Section = Tab:NewSection("character")Section:NewButton("garou to goku", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/sB9fiEFu"))()print("Clicked")
+end)Section:NewButton("Satitma To Goku", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/dB2TgS33"))()print("Clicked")
+end)Section:NewButton("satiama to garou", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/d6ebbUvy"))()print("Clicked")
+end)Section:NewButton("Garou To KJ", "ButtonInfo", function()loadstring(game:HttpGet"https://raw.githubusercontent.com/h8h88/garouxkj/main/kjxgarou")()print("Clicked")
+end)Section:NewButton("Temu KJ Any Character", "ButtonInfo", function()loadstring(game:HttpGet"https://pastebin.com/raw/nPanvCvx")()print("Clicked")
+end)Section:NewButton("Any character to gojo no dmg", "ButtonInfo", function()loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/235d0b19abb38b5637164bf865077817/raw/72cb3b7202fc149d33579ff60f9362ef338bd7d7/fe%2520gojo%2520with%2520fe%2520movement%2520and%2520animation%2520(client%2520vfx%2520+%2520sfx)")()print("Clicked")
+end)Section:NewButton("satiama to coconut", "ButtonInfo", function()loadstring(game:HttpGet("https://pastefy.app/Zd5IL1U2/raw"))()print("Clicked")
+end)Section:NewButton("KJ Moveset", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/iZYmFjju"))()print("Clicked")
+end)local Section = Tab:NewSection("Go To Characters For KJMoveset Find KJ Tap It Wait seconds")local gui = Instance.new("ScreenGui")
+gui.Name = "patrickGui"
+gui.Parent = game.CoreGui
+
+--screengui = gui
+
+
+
+	local TextButton = Instance.new("TextButton")
+-- Text
+TextButton.Text = "Toggle Hub"
+TextButton.TextSize = 24
+-- Color
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundColor3 = Color3.new(0, 1, 1)
+TextButton.BorderColor3 = Color3.new(1, 1, 1)
+-- thickness
+TextButton.BorderSizePixel = 4
+-- Text Code
+TextButton.Font = Enum.Font.Code
+-- Size
+TextButton.Size = UDim2.new(0.2, 0, 0.1, 0)
+-- Posisition
+TextButton.Position = UDim2.new(0, 0, 0.4, 0)
+-- Function
+TextButton.MouseButton1Click:Connect (function()
+Library:ToggleUI()
+end)
+TextButton.Parent = gui
+TextButton.Draggable = true
+
+	local cornerUI = Instance.new("UICorner")
+cornerUI.CornerRadius = UDim.new(0, 5)
+cornerUI.Parent = TextButton
+
+	local uiStroke = Instance.new("UIStroke")
+    uiStroke.Color = Color3.new(0, 0, 0)
+    uiStroke.Thickness = 2
+    uiStroke.Parent = TextButton
