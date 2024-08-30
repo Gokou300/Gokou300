@@ -1,0 +1,29 @@
+-- Referências aos objetos
+local player = game.Workspace.Live["Weakest Dummy"]
+local playerHumanoid = player:FindFirstChildOfClass("Humanoid")
+
+-- IDs das animações
+local playerAnimationId = "k"  -- ID de animação do jogador (don't mind this)
+local dummyAnimationId = "18462892217"  -- ID de animação do Dummy
+
+-- Função para criar e adicionar animação
+local function addAnimation(humanoid, animationId)
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://" .. animationId
+    local animator = humanoid:FindFirstChildOfClass("Animator")
+    
+    if not animator then
+        animator = Instance.new("Animator")
+        animator.Name = "Animator"
+        animator.Parent = humanoid
+    end
+    
+    local animationTrack = animator:LoadAnimation(animation)
+    
+    -- Atrasar o início da animação em 0.8 segundos
+    
+    animationTrack:Play()
+end
+
+-- Adiciona a animação ao Dummy
+addAnimation(playerHumanoid, dummyAnimationId)
