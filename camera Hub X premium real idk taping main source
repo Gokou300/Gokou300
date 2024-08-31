@@ -3,13 +3,13 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shle
 local Window = OrionLib:MakeWindow({Name = "Camera Hub X 6.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-	Name = "character tsb",
+	Name = "Movesets",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Saitama"
+	Name = "Saitama Custom Moveset"
 })
 
 Tab:AddButton({
@@ -118,7 +118,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Garou"
+    Name = "Garou Custom Movesets"
 })
 
 Tab:AddButton({
@@ -156,8 +156,16 @@ Tab:AddButton({
 	end
 })
 
+Tab:AddButton({
+    Name = "Garou To Megumi",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Giahao135/MEGUMI-MOVESET/main/MEGUMI"))()
+  end
+})
+
 local Section = Tab:AddSection({
-    Name = "Custom Characters"
+    Name = "Custom Movesets"
 })
 
 Tab:AddButton({
@@ -175,7 +183,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "KJ",
+    Name = "KJ Moveset V1",
 	Callback = function()
 	        loadstring(game:HttpGet("https://pastebin.com/raw/iZYmFjju"))()
 	end
@@ -186,6 +194,14 @@ Tab:AddButton({
 	Callback = function()
 	        loadstring(game:HttpGet("https://pastebin.com/raw/nPanvCvx"))()
 	end
+})
+
+Tab:AddButton({
+    Name = "KJ Moveset V2",
+	Callback = function()
+  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/KJ%20Character%20By%20Titan%20Camera%20Woman%20Real%20Source"))()
+  end
 })
 
 local Section = Tab:AddSection({
