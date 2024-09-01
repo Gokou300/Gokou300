@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
-local Window = OrionLib:MakeWindow({Name = "Camera Hub X 6.5", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Camera Hub X 6.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Movesets",
@@ -115,6 +115,15 @@ Tab:AddButton({
 	Callback = function()
 	        loadstring(game:HttpGet("https://pastebin.com/raw/zqaKnxep"))()
 	end
+})
+
+Tab:AddButton({
+    Name = "Saitama To Kyra Gojo",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300
+/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
+   end
 })
 
 local Section = Tab:AddSection({
