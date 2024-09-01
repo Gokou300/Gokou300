@@ -123,7 +123,7 @@ Tab:AddButton({
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300
 /main/Kyra%20Gojo%20Tsb%20Bypassed"))()
-   end
+ end
 })
 
 local Section = Tab:AddSection({
@@ -134,7 +134,7 @@ Tab:AddButton({
     Name = "Garou To Suiryu",
 	Callback = function()
 	        loadstring(game:HttpGet('https://raw.githubusercontent.com/xVicity/BURNED/main/LATEST.lua'))()
-	end
+ end
 })
 
 Tab:AddButton({
