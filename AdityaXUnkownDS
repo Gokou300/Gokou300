@@ -1,0 +1,265 @@
+-- Load Rayfield UI
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Universal Script🤑",
+   Icon = 0,
+   LoadingTitle = "Made By Kaiser And UnknownDS On DC",
+   LoadingSubtitle = "By RayField",
+   Theme = "Default",
+   ToggleUIKeybind = "K",
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = true,
+   ConfigurationSaving = {Enabled = false},
+   Discord = {Enabled = false},
+   KeySystem = false
+})
+
+local MainTab = Window:CreateTab("MAIN ⚙️")
+
+-- Infinite Jump
+local infiniteJumpEnabled = false
+local jumpConnection
+
+MainTab:CreateButton({
+   Name = "Infinite Jump (Toggle)",
+   Interact = "Click",
+   Callback = function()
+      local player = game.Players.LocalPlayer
+      local uis = game:GetService("UserInputService")
+      local char = player.Character or player.CharacterAdded:Wait()
+      local humanoid = char:WaitForChild("Humanoid")
+
+      infiniteJumpEnabled = not infiniteJumpEnabled
+
+      if infiniteJumpEnabled then
+         jumpConnection = uis.JumpRequest:Connect(function()
+            if humanoid then
+               humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+         end)
+         Rayfield:Notify({Title = "Infinite Jump ON", Content = "You can now jump infinitely.", Duration = 3})
+      else
+         if jumpConnection then jumpConnection:Disconnect() end
+         Rayfield:Notify({Title = "Infinite Jump OFF", Content = "Jumping returned to normal.", Duration = 3})
+      end
+   end,
+})
+
+-- WalkSpeed Slider
+MainTab:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {1, 500},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Callback = function(Value)
+      local player = game.Players.LocalPlayer
+      if player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+         player.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = Value
+      end
+   end,
+})
+
+-- Fly Speed Slider
+local flySpeed = 100
+MainTab:CreateSlider({
+   Name = "Fly Speed",
+   Range = {10, 500},
+   Increment = 5,
+   Suffix = "Speed",
+   CurrentValue = flySpeed,
+   Callback = function(val)
+      flySpeed = val
+   end,
+})
+
+-- Superman Fly (Joystick move + Camera Y = up/down ONLY when joystick moved)
+local flying = false
+local flyConn, gyro, vel
+
+MainTab:CreateButton({
+   Name = "Superman Fly (Toggle)",
+   Interact = "Click",
+   Callback = function()
+      local player = game.Players.LocalPlayer
+      local char = player.Character or player.CharacterAdded:Wait()
+      local hrp = char:WaitForChild("HumanoidRootPart")
+      local hum = char:WaitForChild("Humanoid")
+      local cam = workspace.CurrentCamera
+
+      flying = not flying
+
+      if flying then
+         Rayfield:Notify({Title = "Superman Fly ON", Content = "Fly with joystick + look up/down", Duration = 3})
+
+         gyro = Instance.new("BodyGyro", hrp)
+         gyro.D = 500
+         gyro.P = 3000
+         gyro.MaxTorque = Vector3.new(400000, 400000, 400000)
+         gyro.CFrame = hrp.CFrame
+
+         vel = Instance.new("BodyVelocity", hrp)
+         vel.MaxForce = Vector3.new(1e5, 1e5, 1e5)
+         vel.Velocity = Vector3.zero
+
+         flyConn = game:GetService("RunService").Heartbeat:Connect(function()
+            local moveDir = hum.MoveDirection
+            local camLook = cam.CFrame.LookVector
+
+            if moveDir.Magnitude > 0.01 then
+               local vertical = camLook.Y
+               local direction = Vector3.new(moveDir.X, vertical, moveDir.Z)
+               vel.Velocity = direction.Unit * flySpeed
+               gyro.CFrame = CFrame.new(hrp.Position, hrp.Position + direction)
+            else
+               vel.Velocity = Vector3.new(0, 0, 0)
+               gyro.CFrame = CFrame.new(hrp.Position, hrp.CFrame.LookVector + hrp.Position)
+            end
+         end)
+      else
+         Rayfield:Notify({Title = "Superman Fly OFF", Content = "Landed.", Duration = 3})
+         if flyConn then flyConn:Disconnect() end
+         if gyro then gyro:Destroy() end
+         if vel then vel:Destroy() end
+         flyConn, gyro, vel = nil, nil, nil
+      end
+   end,
+})
+
+
+local Tab = Window:CreateTab("Games", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Skinwalkers",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/aNQnyJRJ"))()
+   end,
+})
+
+Rayfield:Notify({
+   Title = "Skinwalker Script Executed",
+   Content = "Ay dawg",
+   Duration = 6.5,
+   Image = "rewind",
+})
+
+local Button = Tab:CreateButton({
+   Name = "Slap Battles Ultimate Badge Hub",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/UltimateBadgeHub/main/main.lua'))()   
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Coolgui",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Natural Disaster Survival Super Ring",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lukashub-coder/super-ring/refs/heads/main/Super%20ring!!"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Dead Rails V1",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/DeadRails"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Op Swing Dead Rails",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/DeadRails/refs/heads/main/NOTV4TRUST"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Admin", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "infinte Yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Dex Explorer",
+   Callback = function()  loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/Dex_Explorer"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Keyboard",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ESP",
+   Callback = function()
+   local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+
+local espObjects = {}
+
+
+local function createESP(player)
+	if player == LocalPlayer then return end
+	local box = Drawing.new("Square")
+	box.Visible = false
+	box.Color = Color3.fromRGB(255, 0, 0)
+	box.Thickness = 2
+	box.Transparency = 1
+	box.Filled = false
+	espObjects[player] = box
+end
+
+
+local function removeESP(player)
+	if espObjects[player] then
+		espObjects[player]:Remove()
+		espObjects[player] = nil
+	end
+end
+
+
+RunService.RenderStepped:Connect(function()
+	for player, box in pairs(espObjects) do
+		local character = player.Character
+		if character and character:FindFirstChild("HumanoidRootPart") then
+			local hrp = character.HumanoidRootPart
+			local pos, onScreen = workspace.CurrentCamera:WorldToViewportPoint(hrp.Position)
+			if onScreen then
+				local scale = 3 / (hrp.Position - workspace.CurrentCamera.CFrame.Position).Magnitude * 100
+				box.Size = Vector2.new(40 * scale, 60 * scale)
+				box.Position = Vector2.new(pos.X - box.Size.X / 2, pos.Y - box.Size.Y / 2)
+				box.Visible = true
+			else
+				box.Visible = false
+			end
+		else
+			box.Visible = false
+		end
+	end
+end)
+
+
+for _, player in ipairs(Players:GetPlayers()) do
+	createESP(player)
+end
+
+
+Players.PlayerAdded:Connect(createESP)
+Players.PlayerRemoving:Connect(removeESP)
+
+   end,
+})
