@@ -4,7 +4,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Universal Script🤑",
    Icon = 0,
-   LoadingTitle = "Made By Kaiser And UnknownDS On DC",
+   LoadingTitle = "Made By Aditya12lord And unkowndsreal On DC",
    LoadingSubtitle = "By RayField",
    Theme = "Default",
    ToggleUIKeybind = "K",
@@ -263,3 +263,97 @@ Players.PlayerRemoving:Connect(removeESP)
 
    end,
 })
+
+local Tab = Window:CreateTab("Grow A Garden", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Teleport To Gear Shop",
+   Callback = function()
+   local pos = Vector3.new(-286.538666, 4.465479, -31.755003)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport To Egg Shop",
+   Callback = function()
+   local pos = Vector3.new(-286.582306, 4.496069, -1.080796)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teleport To Cosmetics Shop",
+   Callback = function()
+   local pos = Vector3.new(-287.572540, 4.500000, -14.645960)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos)
+   end,
+})
+
+local Tab = Window:CreateTab("Troll Is Pinning Tower 2", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Troll is Pinning Tower 2 Script",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/G4V3S/S/refs/heads/main/troll.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "TP To End",
+   Callback = function()
+   local pos = Vector3.new(278.330292, 353.223541, -32.885471)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos)
+   end,
+})
+
+local Tab = Window:CreateTab("Survive Overnight In A Mega Store", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Survive Overnight In A Mega Store",
+   Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaitofyp/Survive-Overnight-in-a-Mega-Store/refs/heads/main/Op%20script"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Tp To Safe Place",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Slap Tower", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "TP To End",
+   Callback = function()
+  local pos = Vector3.new(-174.636932, 778.108215, 53.989513)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos) 
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Tp To Secret Slap",
+   Callback = function()
+  local pos = Vector3.new(-10.285187, -9.202019, 19.663748)
+local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(pos)
+   end,
+})
+
+local Tab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("Owner: Aditya12lord")
+
+local Section = Tab:CreateSection("Co Owner: unkowndsreal")
+
+local Section = Tab:CreateSection("Rblx Usernames")
+
+local Section = Tab:CreateSection("Owner Rblx User: AdityaLord12")
+
+local Section = Tab:CreateSection("Co Owner Rblx User: doydoybugoy")
